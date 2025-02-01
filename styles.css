@@ -1,0 +1,263 @@
+/* إضافة خط من Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+/* إعدادات أساسية */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #141c1c;
+    color: #E0E0E0;
+    line-height: 1.6;
+}
+
+
+/* الهيدر */
+
+header {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #B0BEC5;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.warning {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+
+/* شريط البحث والفلاتر */
+
+.search-filter {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-filter input,
+.search-filter select {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+/* تصنيف التطبيقات */
+
+.app-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+
+/* تصميم البطاقة لكل تطبيق */
+
+.app-card {
+    background-color: #2C2C2C;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    width: 260px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.app-card h2 {
+    font-size: 1.6em;
+    margin-top: 15px;
+    color: #FFFFFF;
+}
+
+.app-card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #B0BEC5;
+}
+
+
+/* التقييمات */
+
+.rating {
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.star {
+    font-size: 1.2em;
+}
+
+
+/* تغيير لون الأزرار */
+
+.download-btn {
+    background-color: #1cdc6c;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background-color: #17b95e;
+    transform: translateY(-5px);
+}
+
+.app-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+
+/* تأثير التحميل (الدوار) في منتصف الصفحة */
+
+.fullscreen-spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-top: -40px;
+    margin-left: -40px;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #1cdc6c;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    display: none;
+    z-index: 9999;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* تذييل الصفحة */
+
+footer {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+
+/* نصائح لتنظيف الذاكرة */
+
+.tips {
+    background-color: #2C2C2C;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 12px;
+}
+
+.tips h3 {
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.tips ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #B0BEC5;
+}
+
+
+/* الدردشة الحية */
+
+.chat-support {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.chat-support button {
+    background-color: #1cdc6c;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-support button:hover {
+    background-color: #17b95e;
+}
+
+
+/* إشعارات البريد الإلكتروني */
+
+.email-notifications {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.email-notifications input {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.email-notifications button {
+    background-color: #1cdc6c;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.email-notifications button:hover {
+    background-color: #17b95e;
+}
